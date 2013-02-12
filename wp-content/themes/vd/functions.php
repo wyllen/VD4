@@ -47,12 +47,31 @@ register_post_type('realisations', array(
 		'hierarchical'      => false,
 		'has_archive'       => true,
 		'rewrite'           => array('slug' => 'realisations'),
-		'supports'          => array('title', 'editor','custom-fields', 'author', 'excerpt', 'thumbnail'),
+		'supports'          => array('title', 'editor','author', 'excerpt', 'thumbnail'),
 		'show_in_nav_menus' => true
 	)	
 	);
 	register_taxonomy( "realisations_cat", array( "realisations" ), array("hierarchical" => true, "label" => "Realisations catégories", "singular_label" => "Realisations catégories", "rewrite" => true, "slug" => 'realisations_categories' ) );
-	
+
+register_post_type('skills', array(
+		'label'             => 'Skills',
+		'add_new_item'      =>'Ajouter un skill',
+		'edit_item'         =>'Modifier un skill',
+		'new_item'          =>'Ajouter un skill',
+		'view_item'         =>'Voir la skill',
+		'singular_label'    => 'skill',  
+		'public'            => true,
+		'show_ui'           => true,
+		'capability_type'   => 'post',
+		'hierarchical'      => true,
+		'has_archive'       => false,
+		'rewrite'           => array('slug' => 'skills'),
+		'supports'          => array('title','page-attributes'),
+		'show_in_nav_menus' => true
+	)	
+	);
+//	register_taxonomy( "skills_cat", array( "skills" ), array("hierarchical" => true, "label" => "skills catégories", "singular_label" => "skills catégories", "rewrite" => true, "slug" => 'skills_categories' ) );
+
 register_post_type('labs', array(
 		'label'             => 'Labo',
 		'add_new_item'      =>'Ajouter une labs',
@@ -66,7 +85,7 @@ register_post_type('labs', array(
 		'hierarchical'      => false,
 		'has_archive'       => true,
 		'rewrite'           => array('slug' => 'labs'),
-		'supports'          => array('title', 'editor','custom-fields', 'author', 'excerpt', 'thumbnail'),
+		'supports'          => array('title', 'editor','author', 'excerpt', 'thumbnail'),
 		'show_in_nav_menus' => true
 	)	
 	);
@@ -107,7 +126,7 @@ register_post_type('labs', array(
 	function admin_init(){ //initialisation des champs spécifiques
 
 		add_meta_box("laburl", "LABURL", "laburl", "labs", "normal", "high");
-
+		add_meta_box("skill_level", "SKILL_LEVEL", "skill_level", "skills", "normal", "high");
 		
 	}
 
@@ -125,12 +144,40 @@ function laburl($post){
 
 
 
+
+
+function skill_level($post){
+
+	$val = get_post_meta($post->ID,'_skill_level',true);
+
+    echo '
+<label for="skill_level">Skill:</label><br>
+<select id="skill_level" name="skill_level">';
+for($i=-1;$i<=10;$i++){
+	if($i==$val){
+		echo'<option selected="selected" value="'.$i.'" >'.$i.'</option>';
+	}else{
+		echo'<option value="'.$i.'" />'.$i.'</option>';
+	}
+}   
+
+echo'</select>';
+}
+
+
+
+
 add_action('save_post','save_metaboxes');
 
 function save_metaboxes($post_ID){
 	if(isset($_POST['laburl'])){
 
         update_post_meta($post_ID,'_laburl', esc_html($_POST['laburl']));		
+
+    }
+    if(isset($_POST['skill_level'])){
+
+        update_post_meta($post_ID,'_skill_level', esc_html($_POST['skill_level']));		
 
     }
 }

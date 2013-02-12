@@ -13,13 +13,17 @@
 		<label for="checkskills" class="boxbutton skillsbutton"><div class="tools"></div></label><input id="checkskills" type="checkbox">
 		<div class="skills">
 			<ul>
-			<li>
-				HTML
-			</li>
-			<li>CSS</li>
-			<li>PHP</li>
-			<li>SQL</li>
-			<li>JS</li>
+		<?php $labs = new WP_Query('post_type=skills&posts_per_page=-1&orderby=menu_order'); 
+
+            if($labs->have_posts()) : while($labs->have_posts()) : $labs-> the_post();     
+ ?>		
+ <li <?php if($post->post_parent ){echo'class="skill_child"';} ?> > <?php the_title(); ?> <?php if (get_post_meta($post->ID,'_skill_level',false)>=0){echo '<div class="skill_lvl lvl'.get_post_meta($post->ID,'_skill_level',true).'"></div>';}; ?>  </li>
+
+			<?php
+
+            endwhile;endif;
+
+            ?>
 			</ul>
 		</div>
 	</article>

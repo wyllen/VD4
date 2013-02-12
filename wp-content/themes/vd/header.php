@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo home_url( '/' ); ?>/wp-content/themes/vd/style.css" media="all">
 	<!--[if IE]>
 <link rel="stylesheet" type="text/css" href="<?php echo home_url( '/' ); ?>/wp-content/themes/vd/ie.css" media="all">
-<script type="text/javascript" src="<?php echo home_url( '/' ); ?>/wp-content/themes/vd/multi-column.js"></script>
+<script type="text/javascript" src="<?php echo home_url( '/' ); ?>wp-content/themes/vd/multi-column.js"></script>
 <![endif]-->
 	<meta charset="utf-8">
 	<meta content='initial-scale=1; maximum-scale=1; user-scalable=0;' name='viewport'/>
@@ -17,7 +17,7 @@
 </head>
 <body class="clearfix">
 	<header id="header">
-		<a href="<?php echo home_url( '/' ); ?>" class="logo"></a>
+		<a href="<?php echo home_url( '/' ); ?>" class="logo"></a> <h1>Vincent Durand</h1>
 		<div id="ancres">
 			<ul>
 				<li><a href="#blog" onclick="smoothScroll('blog');return false" class="ancre_blog"><div class="newspaper"></div></a></li>
