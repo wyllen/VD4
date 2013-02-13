@@ -687,6 +687,85 @@ h2 {
 	max-height: 1000px;
 }
 
+.skills ul {
+	margin-top: 1em;
+}
+
+.skill_lvl {
+	display: inline-block;
+	width: 50%;
+	height: 1em;
+	background: red;
+	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.13);
+	float: right;
+	position:relative;
+}
+
+
+.skill_lvl:after{
+	box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.13);
+	content:"";
+		height:100%;
+		width:100%;
+		position:absolute;
+		right:0;
+		top:0;
+}
+.skill_bar{
+	content:"";
+		height:100%;
+		width:100%;
+		position:absolute;
+		right:0;
+		top:0;
+		background:white;
+			-webkit-transition: all linear  2s;
+	-moz-transition: all linear  2s;
+	-o-transition: all linear  2s;
+	-ms-transition: all linear  2s;
+	transition: all linear 2s;
+}
+
+#checkskills:checked + .skills  .lvl1 .skill_bar{
+		width:90%;		
+}
+#checkskills:checked + .skills  .lvl2 .skill_bar{
+		width:80%;		
+}
+#checkskills:checked + .skills  .lvl3 .skill_bar{
+		width:70%;		
+}
+#checkskills:checked + .skills  .lvl4 .skill_bar{
+		width:60%;		
+}
+#checkskills:checked + .skills  .lvl5 .skill_bar{
+		width:50%;		
+}
+#checkskills:checked + .skills  .lvl6 .skill_bar{
+		width:40%;		
+}
+#checkskills:checked + .skills  .lvl7 .skill_bar{
+		width:30%;		
+}
+#checkskills:checked + .skills  .lvl8 .skill_bar{
+		width:20%;		
+}
+#checkskills:checked + .skills  .lvl9 .skill_bar{
+		width:10%;		
+}
+#checkskills:checked + .skills  .lvl10 .skill_bar{
+		width:0%;		
+}
+
+.skill_child {
+font-size: 0.9em;
+text-indent: 1em;
+font-weight: normal !important;
+}
+
+.skills ul li {
+font-weight: bold;
+}
 .reabutton {
 	background: #4ad9d9;
 

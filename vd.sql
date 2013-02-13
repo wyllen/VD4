@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Serveur: localhost
--- Généré le : Mar 12 Février 2013 à 23:21
+-- Généré le : Mer 13 Février 2013 à 22:45
 -- Version du serveur: 5.1.53
 -- Version de PHP: 5.3.4
 
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=308 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=319 ;
 
 --
 -- Contenu de la table `wp_options`
@@ -221,10 +221,10 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (96, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (97, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
 (98, 'sidebars_widgets', 'a:3:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:13:"array_version";i:3;}', 'yes'),
-(99, 'cron', 'a:4:{i:1360752380;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1360754502;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1360763510;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
-(101, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:2:{i:0;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:49:"http://fr.wordpress.org/wordpress-3.5.1-fr_FR.zip";s:6:"locale";s:5:"fr_FR";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:49:"http://fr.wordpress.org/wordpress-3.5.1-fr_FR.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;}s:7:"current";s:5:"3.5.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.5";s:15:"partial_version";s:0:"";}i:1;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:40:"http://wordpress.org/wordpress-3.5.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.5.1.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.5.1-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.5.1-new-bundled.zip";s:7:"partial";b:0;}s:7:"current";s:5:"3.5.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.5";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1360709184;s:15:"version_checked";s:5:"3.5.1";}', 'yes'),
-(102, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1360696693;s:7:"checked";a:6:{s:19:"akismet/akismet.php";s:5:"2.5.6";s:36:"contact-form-7/wp-contact-form-7.php";s:5:"3.3.3";s:9:"hello.php";s:3:"1.6";s:43:"multi-image-metabox/multi-image-metabox.php";s:3:"1.3";s:47:"regenerate-thumbnails/regenerate-thumbnails.php";s:5:"2.2.4";s:44:"root-relative-urls/sb_root_relative_urls.php";s:3:"1.8";}s:8:"response";a:1:{s:19:"akismet/akismet.php";O:8:"stdClass":5:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:11:"new_version";s:5:"2.5.7";s:3:"url";s:44:"http://wordpress.org/extend/plugins/akismet/";s:7:"package";s:55:"http://downloads.wordpress.org/plugin/akismet.2.5.7.zip";}}}', 'yes'),
-(105, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1360692273;s:7:"checked";a:5:{s:7:"one-div";s:0:"";s:12:"twentyeleven";s:3:"1.5";s:9:"twentyten";s:3:"1.5";s:12:"twentytwelve";s:3:"1.1";s:2:"vd";s:0:"";}s:8:"response";a:0:{}}', 'yes'),
+(99, 'cron', 'a:4:{i:1360795580;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1360840902;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1360849910;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(101, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:2:{i:0;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:49:"http://fr.wordpress.org/wordpress-3.5.1-fr_FR.zip";s:6:"locale";s:5:"fr_FR";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:49:"http://fr.wordpress.org/wordpress-3.5.1-fr_FR.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;}s:7:"current";s:5:"3.5.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.5";s:15:"partial_version";s:0:"";}i:1;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:40:"http://wordpress.org/wordpress-3.5.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.5.1.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.5.1-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.5.1-new-bundled.zip";s:7:"partial";b:0;}s:7:"current";s:5:"3.5.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.5";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1360776723;s:15:"version_checked";s:5:"3.5.1";}', 'yes'),
+(102, '_site_transient_update_plugins', 'O:8:"stdClass":2:{s:12:"last_checked";i:1360776723;s:8:"response";a:1:{s:19:"akismet/akismet.php";O:8:"stdClass":5:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:11:"new_version";s:5:"2.5.7";s:3:"url";s:44:"http://wordpress.org/extend/plugins/akismet/";s:7:"package";s:55:"http://downloads.wordpress.org/plugin/akismet.2.5.7.zip";}}}', 'yes'),
+(105, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1360776725;s:7:"checked";a:5:{s:7:"one-div";s:0:"";s:12:"twentyeleven";s:3:"1.5";s:9:"twentyten";s:3:"1.5";s:12:"twentytwelve";s:3:"1.1";s:2:"vd";s:0:"";}s:8:"response";a:0:{}}', 'yes'),
 (106, '_site_transient_timeout_browser_f06ec280e9bf7a75da17008ecb37f3aa', '1356950786', 'yes'),
 (107, '_site_transient_browser_f06ec280e9bf7a75da17008ecb37f3aa', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"23.0.1271.97";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (108, 'dashboard_widget_options', 'a:4:{s:25:"dashboard_recent_comments";a:1:{s:5:"items";i:5;}s:24:"dashboard_incoming_links";a:5:{s:4:"home";s:20:"http://127.0.0.1/VD4";s:4:"link";s:96:"http://blogsearch.google.com/blogsearch?scoring=d&partner=wordpress&q=link:http://127.0.0.1/VD4/";s:3:"url";s:129:"http://blogsearch.google.com/blogsearch_feeds?scoring=d&ie=utf-8&num=10&output=rss&partner=wordpress&q=link:http://127.0.0.1/VD4/";s:5:"items";i:10;s:9:"show_date";b:0;}s:17:"dashboard_primary";a:7:{s:4:"link";s:35:"http://www.wordpress-fr.net/planet/";s:3:"url";s:55:"http://feeds2.feedburner.com/WordpressFrancophonePlanet";s:5:"title";s:14:"Blog WordPress";s:5:"items";i:2;s:12:"show_summary";i:1;s:11:"show_author";i:0;s:9:"show_date";i:1;}s:19:"dashboard_secondary";a:7:{s:4:"link";s:35:"http://www.wordpress-fr.net/planet/";s:3:"url";s:55:"http://feeds2.feedburner.com/WordpressFrancophonePlanet";s:5:"title";s:46:"Autres actualités de WordPress (en français)";s:5:"items";i:5;s:12:"show_summary";i:0;s:11:"show_author";i:0;s:9:"show_date";i:0;}}', 'yes'),
@@ -276,8 +276,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (300, '_transient_timeout_dash_aa95765b5cc111c56d5993d476b1c2f0', '1360735883', 'no'),
 (301, '_transient_dash_4077549d03da2e451c8b5f002294ff51', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://feedproxy.google.com/~r/WordpressFrancophone/~3/Xs6taUZaoZM/'' title=''WordPress depuis votre téléphone évolue… WordPress pour iOS 3.4 La version 3.4 de WordPress pour iOS est dans les bacs. Parmi les nouveautés, un système de notifications. WordPress pour BlackBerry et Playbook en version 2.2.6 Possesseur de mobiles BlackBerry et/ou de tablettes Playbook, réjouissez-vous, WordPress est mis à jour pour vous avec la version 2.2. [&hellip;]''>WordPress Francophone : L’Hebdo WordPress : Mobile – VaultPress – bbPress</a> <span class="rss-date">12 February 2013</span><div class=''rssSummary''>WordPress depuis votre téléphone évolue… WordPress pour iOS 3.4 La version 3.4 de WordPress pour iOS est dans les bacs. Parmi les nouveautés, un système de notifications. WordPress pour BlackBerry et Playbook en version 2.2.6 Possesseur de mobiles BlackBerry et/ou de tablettes Playbook, réjouissez-vous, WordPress est mis à jour pour vous avec la version 2.2. [&hellip;]</div></li><li><a class=''rsswidget'' href=''http://www.echodesplugins.fr/plugins/sexy-login/'' title=''Un widget de connexion qui présente bien [&hellip;]''>L&#039;écho des plugins WordPress : Sexy Login</a> <span class="rss-date">12 February 2013</span><div class=''rssSummary''>Un widget de connexion qui présente bien [&hellip;]</div></li></ul></div>', 'no'),
 (302, '_transient_dash_aa95765b5cc111c56d5993d476b1c2f0', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://feedproxy.google.com/~r/WordpressFrancophone/~3/Xs6taUZaoZM/'' title=''WordPress depuis votre téléphone évolue… WordPress pour iOS 3.4 La version 3.4 de WordPress pour iOS est dans les bacs. Parmi les nouveautés, un système de notifications. WordPress pour BlackBerry et Playbook en version 2.2.6 Possesseur de mobiles BlackBerry et/ou de tablettes Playbook, réjouissez-vous, WordPress est mis à jour pour vous avec la version 2.2. [&hellip;]''>WordPress Francophone : L’Hebdo WordPress : Mobile – VaultPress – bbPress</a></li><li><a class=''rsswidget'' href=''http://www.echodesplugins.fr/plugins/sexy-login/'' title=''Un widget de connexion qui présente bien [&hellip;]''>L&#039;écho des plugins WordPress : Sexy Login</a></li><li><a class=''rsswidget'' href=''http://wpformation.com/buddypress-tutorial-pas-a-pas-3/'' title=''Episode 3 : des quartiers pour organiser les discussions de nos membres &quot;Previously on wpformation&quot; : Nous avons d’abord découvert comment utiliser BuddyPress pour nous aider à créer notre annuaire d’utilisateurs en profitant des composants &quot;profils étendus&quot; et &quot;réglages de compte&quot;. Ensuite, nous avons revu notre paramétrage de  [&hellip;]''>WP Formation : BuddyPress en mode pas-à-pas – Episode 3</a></li><li><a class=''rsswidget'' href=''http://4h18.com/theme-wordpress-modernize/?utm_source=rss&#038;amp;utm_medium=rss&#038;amp;utm_campaign=theme-wordpress-modernize'' title=''Voici une présentation vidéo d&#039;un très joli thème wordpress, capable de répondre à une large palette de besoins. Theme wordpress modernize est un article original de 4h18. 4h18 - [&hellip;]''>4h18 : Theme wordpress modernize</a></li><li><a class=''rsswidget'' href=''http://www.seomix.fr/wp-deferred-javascript/'' title=''Optimisez le temps de chargement de WordPress avec le plugin WP Deferred Javascript : une extension pour charger de manière asynchrone tous vos scripts JS. Article original : WP Deferred Javascript : chargez vos scripts en asynchrone. Debut du contenu : C&#039;était une idée qui trottait dans la tête de Willy Bahuaud depuis quelques temps déjà : améliorer le [&hellip;]''>SEOMix : WP Deferred Javascript : chargez vos scripts en asynchrone</a></li></ul></div>', 'no'),
-(306, '_site_transient_timeout_theme_roots', '1360710984', 'yes'),
-(307, '_site_transient_theme_roots', 'a:5:{s:7:"one-div";s:7:"/themes";s:12:"twentyeleven";s:7:"/themes";s:9:"twentyten";s:7:"/themes";s:12:"twentytwelve";s:7:"/themes";s:2:"vd";s:7:"/themes";}', 'yes');
+(309, '_site_transient_timeout_theme_roots', '1360778524', 'yes'),
+(310, '_site_transient_theme_roots', 'a:5:{s:7:"one-div";s:7:"/themes";s:12:"twentyeleven";s:7:"/themes";s:9:"twentyten";s:7:"/themes";s:12:"twentytwelve";s:7:"/themes";s:2:"vd";s:7:"/themes";}', 'yes'),
+(318, 'skills_cat_children', 'a:0:{}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -404,53 +405,53 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (114, 66, '_edit_last', '1'),
 (115, 66, '_edit_lock', '1360706181:1'),
 (116, 69, '_edit_last', '1'),
-(117, 69, '_edit_lock', '1360708226:1'),
+(117, 69, '_edit_lock', '1360780332:1'),
 (118, 69, '_skill_level', '10'),
 (119, 70, '_edit_last', '1'),
-(120, 70, '_edit_lock', '1360708243:1'),
+(120, 70, '_edit_lock', '1360780320:1'),
 (121, 70, '_skill_level', '8'),
 (122, 71, '_edit_last', '1'),
-(123, 71, '_edit_lock', '1360708272:1'),
+(123, 71, '_edit_lock', '1360780313:1'),
 (124, 71, '_skill_level', '6'),
 (125, 72, '_edit_last', '1'),
-(126, 72, '_edit_lock', '1360708238:1'),
+(126, 72, '_edit_lock', '1360780325:1'),
 (127, 72, '_skill_level', '10'),
 (128, 66, '_wp_trash_meta_status', 'draft'),
 (129, 66, '_wp_trash_meta_time', '1360706574'),
 (130, 74, '_edit_last', '1'),
-(131, 74, '_edit_lock', '1360708280:1'),
+(131, 74, '_edit_lock', '1360780308:1'),
 (132, 74, '_skill_level', '7'),
 (133, 77, '_edit_last', '1'),
-(134, 77, '_edit_lock', '1360708411:1'),
+(134, 77, '_edit_lock', '1360780239:1'),
 (135, 77, '_skill_level', '8'),
 (136, 79, '_edit_last', '1'),
 (137, 79, '_skill_level', '5'),
-(138, 79, '_edit_lock', '1360708397:1'),
+(138, 79, '_edit_lock', '1360780250:1'),
 (139, 80, '_edit_last', '1'),
-(140, 80, '_edit_lock', '1360708392:1'),
+(140, 80, '_edit_lock', '1360780278:1'),
 (141, 80, '_skill_level', '6'),
 (142, 81, '_edit_last', '1'),
 (143, 81, '_edit_lock', '1360706810:1'),
 (144, 81, '_skill_level', '0'),
 (145, 82, '_edit_last', '1'),
 (146, 82, '_skill_level', '-1'),
-(147, 82, '_edit_lock', '1360708386:1'),
+(147, 82, '_edit_lock', '1360780244:1'),
 (148, 83, '_edit_last', '1'),
-(149, 83, '_edit_lock', '1360708405:1'),
+(149, 83, '_edit_lock', '1360780227:1'),
 (150, 83, '_skill_level', '-1'),
 (151, 84, '_edit_last', '1'),
-(152, 84, '_edit_lock', '1360708362:1'),
+(152, 84, '_edit_lock', '1360780284:1'),
 (153, 84, '_skill_level', '-1'),
 (154, 85, '_edit_last', '1'),
-(155, 85, '_edit_lock', '1360708371:1'),
+(155, 85, '_edit_lock', '1360780301:1'),
 (156, 85, '_skill_level', '9'),
 (157, 81, '_wp_trash_meta_status', 'publish'),
 (158, 81, '_wp_trash_meta_time', '1360707192'),
 (159, 86, '_edit_last', '1'),
-(160, 86, '_edit_lock', '1360708380:1'),
+(160, 86, '_edit_lock', '1360780290:1'),
 (161, 86, '_skill_level', '7'),
 (162, 87, '_edit_last', '1'),
-(163, 87, '_edit_lock', '1360708375:1'),
+(163, 87, '_edit_lock', '1360780295:1'),
 (164, 87, '_skill_level', '3'),
 (165, 89, '_edit_last', '1'),
 (166, 89, '_edit_lock', '1360708516:1'),
@@ -557,25 +558,25 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (66, 1, '2013-02-12 22:56:21', '2013-02-12 21:56:21', '', 'HTML', '', 'trash', 'closed', 'closed', '', 'html-2', '', '', '2013-02-12 23:02:54', '2013-02-12 22:02:54', '', 0, '/VD4/?post_type=skills&#038;p=66', 0, 'skills', '', 0),
 (67, 1, '2013-02-12 22:56:52', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-02-12 22:56:52', '0000-00-00 00:00:00', '', 0, '/VD4/?post_type=skills&p=67', 0, 'skills', '', 0),
 (68, 1, '2013-02-12 22:57:29', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-02-12 22:57:29', '0000-00-00 00:00:00', '', 0, '/VD4/?post_type=skills&p=68', 0, 'skills', '', 0),
-(69, 1, '2013-02-12 22:58:21', '2013-02-12 21:58:21', '', 'HTML', '', 'publish', 'closed', 'closed', '', 'html', '', '', '2013-02-12 23:30:26', '2013-02-12 22:30:26', '', 0, '/VD4/?post_type=skills&#038;p=69', 100, 'skills', '', 0),
-(70, 1, '2013-02-12 22:58:40', '2013-02-12 21:58:40', '', 'PHP', '', 'publish', 'closed', 'closed', '', 'php', '', '', '2013-02-12 23:30:43', '2013-02-12 22:30:43', '', 0, '/VD4/?post_type=skills&#038;p=70', 98, 'skills', '', 0),
-(71, 1, '2013-02-12 22:58:51', '2013-02-12 21:58:51', '', 'Javascript', '', 'publish', 'closed', 'closed', '', 'javascript', '', '', '2013-02-12 23:31:12', '2013-02-12 22:31:12', '', 0, '/VD4/?post_type=skills&#038;p=71', 97, 'skills', '', 0),
-(72, 1, '2013-02-12 22:59:06', '2013-02-12 21:59:06', '', 'CSS', '', 'publish', 'closed', 'closed', '', 'css', '', '', '2013-02-12 23:30:38', '2013-02-12 22:30:38', '', 0, '/VD4/?post_type=skills&#038;p=72', 99, 'skills', '', 0),
+(69, 1, '2013-02-12 22:58:21', '2013-02-12 21:58:21', '', 'HTML', '', 'publish', 'closed', 'closed', '', 'html', '', '', '2013-02-13 19:32:11', '2013-02-13 18:32:11', '', 0, '/VD4/?post_type=skills&#038;p=69', 100, 'skills', '', 0),
+(70, 1, '2013-02-12 22:58:40', '2013-02-12 21:58:40', '', 'PHP', '', 'publish', 'closed', 'closed', '', 'php', '', '', '2013-02-13 19:31:59', '2013-02-13 18:31:59', '', 0, '/VD4/?post_type=skills&#038;p=70', 98, 'skills', '', 0),
+(71, 1, '2013-02-12 22:58:51', '2013-02-12 21:58:51', '', 'Javascript', '', 'publish', 'closed', 'closed', '', 'javascript', '', '', '2013-02-13 19:31:53', '2013-02-13 18:31:53', '', 0, '/VD4/?post_type=skills&#038;p=71', 97, 'skills', '', 0),
+(72, 1, '2013-02-12 22:59:06', '2013-02-12 21:59:06', '', 'CSS', '', 'publish', 'closed', 'closed', '', 'css', '', '', '2013-02-13 19:32:05', '2013-02-13 18:32:05', '', 0, '/VD4/?post_type=skills&#038;p=72', 99, 'skills', '', 0),
 (73, 1, '2013-02-12 22:59:26', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-02-12 22:59:26', '0000-00-00 00:00:00', '', 0, '/VD4/?post_type=skills&p=73', 0, 'skills', '', 0),
-(74, 1, '2013-02-12 23:03:08', '2013-02-12 22:03:08', '', 'SQL', '', 'publish', 'closed', 'closed', '', 'sql', '', '', '2013-02-12 23:31:19', '2013-02-12 22:31:19', '', 0, '/VD4/?post_type=skills&#038;p=74', 96, 'skills', '', 0),
+(74, 1, '2013-02-12 23:03:08', '2013-02-12 22:03:08', '', 'SQL', '', 'publish', 'closed', 'closed', '', 'sql', '', '', '2013-02-13 19:31:48', '2013-02-13 18:31:48', '', 0, '/VD4/?post_type=skills&#038;p=74', 96, 'skills', '', 0),
 (75, 1, '2013-02-12 23:04:23', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-02-12 23:04:23', '0000-00-00 00:00:00', '', 0, '/VD4/?post_type=skills&p=75', 0, 'skills', '', 0),
 (76, 1, '2013-02-12 23:05:22', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-02-12 23:05:22', '0000-00-00 00:00:00', '', 0, '/VD4/?post_type=skills&p=76', 0, 'skills', '', 0),
-(77, 1, '2013-02-12 23:05:55', '2013-02-12 22:05:55', '', 'jQuery', '', 'publish', 'closed', 'closed', '', 'jquery', '', '', '2013-02-12 23:33:31', '2013-02-12 22:33:31', '', 83, '/VD4/?post_type=skills&#038;p=77', 68, 'skills', '', 0),
+(77, 1, '2013-02-12 23:05:55', '2013-02-12 22:05:55', '', 'jQuery', '', 'publish', 'closed', 'closed', '', 'jquery', '', '', '2013-02-13 19:30:39', '2013-02-13 18:30:39', '', 83, '/VD4/?post_type=skills&#038;p=77', 68, 'skills', '', 0),
 (78, 1, '2013-02-12 23:07:31', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-02-12 23:07:31', '0000-00-00 00:00:00', '', 0, '/VD4/?post_type=skills&p=78', 0, 'skills', '', 0),
-(79, 1, '2013-02-12 23:08:07', '2013-02-12 22:08:07', '', 'CakePHP', '', 'publish', 'closed', 'closed', '', 'cakephp', '', '', '2013-02-12 23:33:17', '2013-02-12 22:33:17', '', 82, '/VD4/?post_type=skills&#038;p=79', 77, 'skills', '', 0),
-(80, 1, '2013-02-12 23:08:30', '2013-02-12 22:08:30', '', 'Symfony', '', 'publish', 'closed', 'closed', '', 'symfony', '', '', '2013-02-12 23:33:12', '2013-02-12 22:33:12', '', 82, '/VD4/?post_type=skills&#038;p=80', 78, 'skills', '', 0),
+(79, 1, '2013-02-12 23:08:07', '2013-02-12 22:08:07', '', 'CakePHP', '', 'publish', 'closed', 'closed', '', 'cakephp', '', '', '2013-02-13 19:30:50', '2013-02-13 18:30:50', '', 82, '/VD4/?post_type=skills&#038;p=79', 77, 'skills', '', 0),
+(80, 1, '2013-02-12 23:08:30', '2013-02-12 22:08:30', '', 'Symfony', '', 'publish', 'closed', 'closed', '', 'symfony', '', '', '2013-02-13 19:31:18', '2013-02-13 18:31:18', '', 82, '/VD4/?post_type=skills&#038;p=80', 78, 'skills', '', 0),
 (81, 1, '2013-02-12 23:08:43', '2013-02-12 22:08:43', '', 'PL SQL', '', 'trash', 'closed', 'closed', '', 'pl-sql', '', '', '2013-02-12 23:13:13', '2013-02-12 22:13:13', '', 74, '/VD4/?post_type=skills&#038;p=81', 0, 'skills', '', 0),
-(82, 1, '2013-02-12 23:09:28', '2013-02-12 22:09:28', '', 'Framework PHP', '', 'publish', 'closed', 'closed', '', 'framework-php', '', '', '2013-02-12 23:33:05', '2013-02-12 22:33:05', '', 0, '/VD4/?post_type=skills&#038;p=82', 79, 'skills', '', 0),
-(83, 1, '2013-02-12 23:11:33', '2013-02-12 22:11:33', '', 'Framework Javascript', '', 'publish', 'closed', 'closed', '', 'framework-javascript', '', '', '2013-02-12 23:33:25', '2013-02-12 22:33:25', '', 0, '/VD4/?post_type=skills&#038;p=83', 69, 'skills', '', 0),
-(84, 1, '2013-02-12 23:12:50', '2013-02-12 22:12:50', '', 'CMS', '', 'publish', 'closed', 'closed', '', 'cms', '', '', '2013-02-12 23:32:42', '2013-02-12 22:32:42', '', 0, '/VD4/?post_type=skills&#038;p=84', 89, 'skills', '', 0),
-(85, 1, '2013-02-12 23:13:03', '2013-02-12 22:13:03', '', 'Wordpress', '', 'publish', 'closed', 'closed', '', 'wordpress', '', '', '2013-02-12 23:32:51', '2013-02-12 22:32:51', '', 84, '/VD4/?post_type=skills&#038;p=85', 88, 'skills', '', 0),
-(86, 1, '2013-02-12 23:14:54', '2013-02-12 22:14:54', '', 'Ez Publish', '', 'publish', 'closed', 'closed', '', 'ez-puiblish', '', '', '2013-02-12 23:33:00', '2013-02-12 22:33:00', '', 84, '/VD4/?post_type=skills&#038;p=86', 86, 'skills', '', 0),
-(87, 1, '2013-02-12 23:15:18', '2013-02-12 22:15:18', '', 'Prestashop', '', 'publish', 'closed', 'closed', '', 'prestashop', '', '', '2013-02-12 23:32:55', '2013-02-12 22:32:55', '', 84, '/VD4/?post_type=skills&#038;p=87', 87, 'skills', '', 0),
+(82, 1, '2013-02-12 23:09:28', '2013-02-12 22:09:28', '', 'Framework PHP', '', 'publish', 'closed', 'closed', '', 'framework-php', '', '', '2013-02-13 19:30:44', '2013-02-13 18:30:44', '', 0, '/VD4/?post_type=skills&#038;p=82', 79, 'skills', '', 0),
+(83, 1, '2013-02-12 23:11:33', '2013-02-12 22:11:33', '', 'Framework Javascript', '', 'publish', 'closed', 'closed', '', 'framework-javascript', '', '', '2013-02-13 19:30:27', '2013-02-13 18:30:27', '', 0, '/VD4/?post_type=skills&#038;p=83', 69, 'skills', '', 0),
+(84, 1, '2013-02-12 23:12:50', '2013-02-12 22:12:50', '', 'CMS', '', 'publish', 'closed', 'closed', '', 'cms', '', '', '2013-02-13 19:31:24', '2013-02-13 18:31:24', '', 0, '/VD4/?post_type=skills&#038;p=84', 89, 'skills', '', 0),
+(85, 1, '2013-02-12 23:13:03', '2013-02-12 22:13:03', '', 'Wordpress', '', 'publish', 'closed', 'closed', '', 'wordpress', '', '', '2013-02-13 19:31:41', '2013-02-13 18:31:41', '', 84, '/VD4/?post_type=skills&#038;p=85', 88, 'skills', '', 0),
+(86, 1, '2013-02-12 23:14:54', '2013-02-12 22:14:54', '', 'Ez Publish', '', 'publish', 'closed', 'closed', '', 'ez-puiblish', '', '', '2013-02-13 19:31:29', '2013-02-13 18:31:29', '', 84, '/VD4/?post_type=skills&#038;p=86', 86, 'skills', '', 0),
+(87, 1, '2013-02-12 23:15:18', '2013-02-12 22:15:18', '', 'Prestashop', '', 'publish', 'closed', 'closed', '', 'prestashop', '', '', '2013-02-13 19:31:35', '2013-02-13 18:31:35', '', 84, '/VD4/?post_type=skills&#038;p=87', 87, 'skills', '', 0),
 (88, 1, '2013-02-12 23:18:49', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-02-12 23:18:49', '0000-00-00 00:00:00', '', 0, '/VD4/?post_type=skills&p=88', 0, 'skills', '', 0),
 (89, 1, '2013-02-12 23:36:01', '2013-02-12 22:36:01', 'Who you calling scruffy-looking Uncle Owen a new hope Aunt Beru. Soon you will call me master pick up some power converters help me Obi-Wan Kenobi the empire strikes back it is your destiny trench run. Apprentice emperor bantha empire. Imperial senate that''s no moon, it''s a space station the Force is strong with this one Chewbacca fully operational battle station. Jabba the Hutt bacta you''re my only hope bullseye womp rats in my T-16.\r\n\r\nGarbage compactor tie fighter stormtrooper wretched hive of scum and villainy. Lightsaber these aren''t the droids you''re looking for Yoda. Bespin star systems C3P0 Coruscant scoundrel I find your lack of faith disturbing. The Force hokey religions Obi-Wan. Palpatine great pit of Carkoon thermal detonator Millenium Falcon don''t get cocky.', 'Jedi ipsum', '', 'publish', 'open', 'open', '', 'jedi-ipsum', '', '', '2013-02-12 23:36:01', '2013-02-12 22:36:01', '', 0, '/VD4/?p=89', 0, 'post', '', 0),
 (90, 1, '2013-02-12 23:35:45', '2013-02-12 22:35:45', '', 'test', '', 'inherit', 'open', 'open', '', '89-revision', '', '', '2013-02-12 23:35:45', '2013-02-12 22:35:45', '', 89, '/VD4/?p=90', 0, 'revision', '', 0),
@@ -597,7 +598,7 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
   PRIMARY KEY (`term_id`),
   UNIQUE KEY `slug` (`slug`),
   KEY `name` (`name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Contenu de la table `wp_terms`
@@ -608,7 +609,13 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (2, 'Site perso', 'site-perso', 0),
 (3, 'Fond d''écran', 'fond-decran', 0),
 (4, 'Réalisation en cours', 'realisation-en-cours', 0),
-(5, 'Création graphique', 'creation-graphique', 0);
+(5, 'Création graphique', 'creation-graphique', 0),
+(6, 'HTML', 'html', 0),
+(7, 'CSS', 'css', 0),
+(8, 'PHP', 'php', 0),
+(9, 'SQL', 'sql', 0),
+(10, 'Javascript', 'js', 0),
+(11, 'CMS', 'cms', 0);
 
 -- --------------------------------------------------------
 
@@ -639,6 +646,20 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (44, 3, 0),
 (46, 5, 0),
 (48, 3, 0),
+(69, 6, 0),
+(70, 8, 0),
+(71, 10, 0),
+(72, 7, 0),
+(74, 9, 0),
+(77, 10, 0),
+(79, 8, 0),
+(80, 8, 0),
+(82, 8, 0),
+(83, 10, 0),
+(84, 11, 0),
+(85, 11, 0),
+(86, 11, 0),
+(87, 11, 0),
 (89, 1, 0),
 (92, 1, 0);
 
@@ -658,7 +679,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Contenu de la table `wp_term_taxonomy`
@@ -669,7 +690,13 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (2, 2, 'realisations_cat', '', 0, 2),
 (3, 3, 'realisations_cat', '', 0, 4),
 (4, 4, 'realisations_cat', '', 0, 1),
-(5, 5, 'realisations_cat', '', 0, 1);
+(5, 5, 'realisations_cat', '', 0, 1),
+(6, 6, 'skills_cat', '', 0, 1),
+(7, 7, 'skills_cat', '', 0, 1),
+(8, 8, 'skills_cat', '', 0, 4),
+(9, 9, 'skills_cat', '', 0, 1),
+(10, 10, 'skills_cat', '', 0, 3),
+(11, 11, 'skills_cat', '', 0, 4);
 
 -- --------------------------------------------------------
 

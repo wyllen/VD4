@@ -70,7 +70,7 @@ register_post_type('skills', array(
 		'show_in_nav_menus' => true
 	)	
 	);
-//	register_taxonomy( "skills_cat", array( "skills" ), array("hierarchical" => true, "label" => "skills catégories", "singular_label" => "skills catégories", "rewrite" => true, "slug" => 'skills_categories' ) );
+register_taxonomy( "skills_cat", array( "skills" ), array("hierarchical" => true, "label" => "skills catégories", "singular_label" => "skills catégories", "rewrite" => true, "slug" => 'skills_categories' ) );
 
 register_post_type('labs', array(
 		'label'             => 'Labo',

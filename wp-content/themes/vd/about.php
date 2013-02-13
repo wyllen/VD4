@@ -17,7 +17,12 @@
 
             if($labs->have_posts()) : while($labs->have_posts()) : $labs-> the_post();     
  ?>		
- <li <?php if($post->post_parent ){echo'class="skill_child"';} ?> > <?php the_title(); ?> <?php if (get_post_meta($post->ID,'_skill_level',false)>=0){echo '<div class="skill_lvl lvl'.get_post_meta($post->ID,'_skill_level',true).'"></div>';}; ?>  </li>
+
+ <?php
+$tax =wp_get_object_terms($post->ID, 'skills_cat');
+
+ ?>
+ <li <?php if($post->post_parent ){echo'class="skill_child"';} ?> > <?php the_title(); ?> <?php if(get_post_meta($post->ID,'_skill_level',true)>=0){echo '<div class="skill_lvl lvl'.get_post_meta($post->ID,'_skill_level',true).' skill_cat_'.$tax[0]->name.'"><div class="skill_bar"></div></div>';}; ?>  </li>
 
 			<?php
 
