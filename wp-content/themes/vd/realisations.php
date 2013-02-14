@@ -1,4 +1,4 @@
-<section id="realisations">
+<section id="realisations" class="realisations">
 <div class="sectionheader">	<h1><?php _e( 'Réalisations', 'vd' ); ?></h1><div class="monitor"></div></div>
 	<label for="checkrea" class="boxbutton reabutton">La suite!</label>
 	<input id="checkrea" type="checkbox">
@@ -17,7 +17,7 @@
 		?>  
 
 
-		<li><a href="<?php the_permalink(); ?>"><img src="<?php echo $image['image1'][0]; ?>"  class="imgrea" alt=""></a></li>
+		<li><a href="<?php the_permalink(); ?>#<?php the_slug();?>"><img src="<?php echo $image['image1'][0]; ?>"  class="imgrea" alt=""></a></li>
 		
             <?php
 

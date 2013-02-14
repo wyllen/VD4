@@ -104,8 +104,9 @@ function wpcf7_text_shortcode_handler( $tag ) {
 
 	$html = '<input type="text" name="' . $name . '" value="' . esc_attr( $value ) . '"' . $atts . ' />';
 
-	$html = '<span class="wpcf7-form-control-wrap ' . $name . '">' . $html . $validation_error . '</span>';
+	//$html = '<span class="wpcf7-form-control-wrap ' . $name . '">' . $html . $validation_error . '</span>';
 
+	$html = $html . $validation_error;
 	return $html;
 }
 

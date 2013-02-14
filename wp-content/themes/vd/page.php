@@ -1,20 +1,16 @@
 <?php get_header(); ?>
 
-	<div id="content">
+<section class="blog single_article">
+	<div class="sectionheader"><h1><?php the_title(); ?></h1></div>
+	<article>
+		<?php the_content(); ?>
+	</article>
+</section>
 
-	<?php get_sidebar();
-
-echo'<div id="page_content">';
-		if(have_posts()) : while(have_posts()) : the_post();
-
-		the_content();	
-
-		endwhile;endif;
-
-echo'</div>';
-
-		?>	
-
-		</div>
+<?php get_template_part( 'contact' ); ?>
+<?php get_template_part( 'about' ); ?>
+<?php get_template_part( 'realisations' ); ?>
+<?php get_template_part( 'lab' ); ?>
+	
 
 <?php get_footer(); ?>
