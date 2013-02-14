@@ -726,6 +726,25 @@ h2 {
 	transition: all linear 2s;
 }
 
+.skill_lvl.skill_cat_HTML {
+background: #e44d26;
+}
+.skill_lvl.skill_cat_CSS {
+background: #0170ba;
+}
+.skill_lvl.skill_cat_PHP {
+background: #5a69a6;
+}
+.skill_lvl.skill_cat_Javascript {
+background: #f2c81f;
+}
+.skill_lvl.skill_cat_SQL {
+background: #8fd841;
+}
+.skill_lvl.skill_cat_CMS {
+background: #dc006a;
+}
+
 #checkskills:checked + .skills  .lvl1 .skill_bar{
 		width:90%;		
 }
