@@ -2,10 +2,8 @@
 <div class="sectionheader"><h1><?php _e( 'Blog', 'vd' ); ?></h1><div class="newspaper"></div></div>	
 	<?php 
     
-        $args = array('post_type' => 'post','paged' => get_query_var('paged'));
+        $args = array('post_type' => 'post','paged' => get_query_var( 'paged' ));
         $articles = new WP_Query($args); 
-
-
         
          if($articles->have_posts()) : while($articles->have_posts()) : $articles-> the_post();		
 		?>
@@ -15,7 +13,7 @@
 	</article>		
 <?php	endwhile;
 ?>
-   <div class="article_pagination"><?php  theme_pagination();?></div>
+   <div class="article_pagination"><?php  theme_pagination($articles);?></div>
 <?php
 endif;
 ?>				
