@@ -14,6 +14,7 @@
 <script language="JavaScript" src="<?php echo home_url( '/' ); ?>/wp-content/themes/vd/js/html5.js"></script>
  <script language="JavaScript" src="<?php echo home_url( '/' ); ?>/wp-content/themes/vd/js/respond.js"></script>
     <![endif]-->
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/16x16.ico" />
 </head>
 <body class="clearfix">
 	<header id="header">
